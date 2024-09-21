@@ -9,7 +9,7 @@ interface AppState {
   setActiveSection: (section: string) => void;
 }
 
-const useAppStore = create<AppState>((set: any) => ({
+const useAppStore = create<AppState>((set) => ({
   // Dark Mode State
   darkModeEnabled: false, // Default to light mode
   toggleDarkMode: () => set((state: { darkModeEnabled: boolean; }) => ({ darkModeEnabled: !state.darkModeEnabled })),
