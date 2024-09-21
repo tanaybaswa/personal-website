@@ -25,3 +25,27 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Default Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1a202c; /* Dark gray */
+  color: #f7fafc; /* Off-white */
+}
+
+/* Light mode */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #1a202c; /* Dark gray */
+  color: #f7fafc; /* Off-white */
+}
