@@ -62,7 +62,9 @@ export default function BlogList() {
   if (!selectedPost) {
     return (
       <div className="p-4 m-4 mx-auto w-[30vw]">
-        <h2 className="text-xl font-bold mb-6">Blog Posts</h2>
+        <h2 className="text-2xl font-bold mb-6 mt-6">
+          Blog Posts
+        </h2>
         <ul className="text-left">
           {blogPosts.map((post) => (
             <li key={post.post} className="mb-4">
