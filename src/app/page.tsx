@@ -2,6 +2,7 @@
 
 import useAppStore from "@/store/AppStore";
 import DarkModeToggle from "@/components/DarkModeToggle";
+import BlogList from "@/components/BlogList";
 import "./globals.css";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
       case "projects":
         return <p>Here are some of my projects.</p>;
       case "blog":
-        return <p>Welcome to my blog section.</p>;
+        return <BlogList />;
       case "contact":
         return <p>Feel free to contact me at: tanay@enkryptai.com</p>;
       default:
@@ -30,7 +31,7 @@ export default function Home() {
   const darkModeClass = darkModeEnabled ? "dark-mode" : "light-mode";
 
   return (
-    <div className={`${darkModeClass} flex justify-center h-screen`}>
+    <div className={`${darkModeClass} flex justify-center min-h-screen`}>
       <div className="container mx-auto px-4 max-w-6xl text-center mt-20">
         {/* Header */}
         <h1 className="text-4xl font-bold my-8">Tanay Baswa</h1>
@@ -41,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* Navigation Bar */}
-        <nav className="flex justify-center space-x-6 mb-8">
+        <nav className="flex justify-center space-x-6 mb-2">
           {["home", "work", "projects", "blog", "contact"].map((section) => (
             <button
               key={section}
